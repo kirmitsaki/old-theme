@@ -21,14 +21,30 @@
     transform: rotate(-7deg);
     position: absolute;
     top: 17px;
-    left: 26px;
+    left: 20px;
 }
-.toolkit ul {
+.toolkit h4 i {
+    margin-right: 6px;
+}
+.toolkit ul.tool-list {
     margin-top: 45px;
 }
-.toolkit ul li {
+.toolkit ul.tool-list li {
     padding-bottom: 0 !important;
 }
-.toolkit ul li .panel {
+.toolkit ul.tool-list li .panel {
     background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+.toolkit ul.tool-list li .panel.design h5, b {
+    color: #FF7324;
+}
+.toolkit ul.tool-list li .panel.front-end h5, b  {
+    color: #408A8D;
+}
+.toolkit ul.tool-list li .panel.tools h5, b  {
+    color: #2D631E;
+}
+.toolkit ul.tool-list li .panel.non-technical h5, b  {
+    color: #9A2339;
 }
