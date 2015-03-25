@@ -36,15 +36,15 @@
     background-color: #FFFFFF;
     margin-bottom: 0;
 }
-.toolkit ul.tool-list li .panel.design h5, b {
+.toolkit ul.tool-list li .panel.design h5, .toolkit ul.tool-list li .panel.design  b {
     color: #FF7324;
 }
-.toolkit ul.tool-list li .panel.front-end h5, b  {
+.toolkit ul.tool-list li .panel.front-end h5, .toolkit ul.tool-list li .panel.front-end b {
     color: #408A8D;
 }
-.toolkit ul.tool-list li .panel.tools h5, b  {
+.toolkit ul.tool-list li .panel.tools h5, .toolkit ul.tool-list li .panel.tools b {
     color: #2D631E;
 }
-.toolkit ul.tool-list li .panel.non-technical h5, b  {
+.toolkit ul.tool-list li .panel.non-technical h5, .toolkit ul.tool-list li .panel.non-technical b {
     color: #9A2339;
 }
