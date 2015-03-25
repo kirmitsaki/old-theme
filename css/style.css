@@ -2,8 +2,33 @@
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    margin-top: 0;
+
     /* Rotate img */
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
+}
+@media screen and (max-width: 640px) {
+    .profile-pic {
+        margin-top: 36px;
+    }
+}
+
+.toolkit h4 {
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    position: absolute;
+    top: 17px;
+    left: 26px;
+}
+.toolkit ul {
+    margin-top: 45px;
+}
+.toolkit ul li {
+    padding-bottom: 0 !important;
+}
+.toolkit ul li .panel {
+    background-color: #FFFFFF;
 }
