@@ -4304,7 +4304,11 @@ blockquote p {
     padding-top: 0; } }
 /* Progress Bar */
 .progress {
-  background-color: #F6F6F6;
+  /*background-color: #F6F6F6;*/
+  background-color: #C2C2C2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+
   height: 1.5625rem;
   border: 1px solid white;
   padding: 0.125rem;
