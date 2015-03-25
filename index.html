@@ -27,8 +27,12 @@
             <div class="nav-bar right">
                 <div data-magellan-expedition="fixed">
                     <dl class="sub-nav">
-                        <dd data-magellan-arrival="build"><a href="index.html">Portfolio</a></dd>
-                        <dd data-magellan-arrival="js"><a href="cv.html">CV</a></dd>
+                        <dd data-magellan-arrival="build">
+                            <a href="#portfolio">Portfolio</a>
+                        </dd>
+                        <dd data-magellan-arrival="js">
+                            <a href="#" data-reveal-id="myModal_CV">CV</a>
+                        </dd>
                     </dl>
                 </div>
             </div>
@@ -44,6 +48,7 @@
         </div>
     </div>
 
+    <!-- About -->
     <div class="row">
         <hr>
         <div class="large-8 columns">
@@ -57,6 +62,8 @@
             <img src="http://placehold.it/400x300&text=[img]">
         </div>
     </div>
+
+    <!-- Toolkit -->
     <div class="row">
         <div class="large-12 columns">
             <hr>
@@ -107,6 +114,8 @@
         </div>
     </div>
 
+    <!-- Portfolio -->
+    <a id="portfolio"></a>
     <div class="row">
         <hr>
         <div class="large-12 columns">
@@ -460,9 +469,18 @@
                 </li>
             </ul>
 
+            <!-- CV -->
+            <div id="myModal_CV" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h2 id="modalTitle">Awesome. I have it.</h2>
+                <p class="lead">Your couch.  It is mine.</p>
+                <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+
         </div>
     </div>
 
+    <!-- Contact -->
     <div class="row">
         <div class="large-12 columns">
             <hr>
@@ -479,6 +497,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="row">
         <div class="large-12 columns">
             <hr/>
