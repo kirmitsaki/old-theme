@@ -21,29 +21,27 @@
 
 .container {
     overflow:hidden;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     text-align: justify;
 }
-
 .shaped {
     float:left;
-    height:100vh;
+    height:50vh;
     width:40vw;
     float:right;
-    background: black url(http://placehold.it/1000x500&text=[banner img]) center top no-repeat;
+    background: black url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/images/eiffel.jpg) center top no-repeat;
     background-size:cover;
-    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    /* -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%); */
     shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     -webkit-shape-margin: 20px;
     -webkit-shape-outside: url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/css/mask.png) top left;
     shape-outside: url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/css/mask.png) top left;
 }
-
 .content h1 {
     font-family: 'deconeuelight', sans-serif;
-    font-size: 90px;
+    font-size: 85px;
     line-height: 1;
     float: left;
     width: 350px;
@@ -52,6 +50,9 @@
     padding-top: 20px;
     -webkit-shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
     shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
+}
+.content span {
+    font-size:45px;
 }
 
 
