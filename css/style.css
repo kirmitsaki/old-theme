@@ -17,47 +17,6 @@
     }
 }
 
-
-
-.container {
-    overflow:hidden;
-    height: 36vh;
-    width: 100%;
-    text-align: justify;
-}
-.shaped {
-    float:left;
-    height:36vh;
-    width:40vw;
-    float:right;
-    background: black url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/images/eiffel.jpg) center top no-repeat;
-    background-size:cover;
-    /* -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%); */
-    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    -webkit-shape-margin: 20px;
-    -webkit-shape-outside: url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/css/mask.png) top left;
-    shape-outside: url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/css/mask.png) top left;
-}
-.content h1 {
-    font-family: 'deconeuelight', sans-serif;
-    font-size: 85px;
-    line-height: 1;
-    float: left;
-    width: 308px;
-    height: 127vh;
-    margin-top: 0;
-    padding-top: 20px;
-    -webkit-shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-    shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-}
-.content span {
-    font-size:45px;
-}
-
-
-
-
 .toolkit h4 {
     -ms-transform: rotate(-7deg);
     -webkit-transform: rotate(-7deg);
