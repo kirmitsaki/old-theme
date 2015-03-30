@@ -1,3 +1,15 @@
+/* FONTS */
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* MENU */
+[data-magellan-expedition].fixed {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
 .profile-pic {
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -18,40 +30,9 @@
 }
 
 /* BANNER */
-.container {
-    overflow:hidden;
-    height: 36vh;
-    width: 100%;
-    text-align: justify;
-}
-.shaped {
-    float:left;
-    height: 22vh;
-    width: 33vw;
-    float:right;
-    background: black url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/images/eiffel.jpg) center top no-repeat;
-    background-size:cover;
-    /* -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%); */
-    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    -webkit-shape-margin: 20px;
-    -webkit-shape-outside: url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/css/mask.png) top left;
-    shape-outside: url(http://sarasoueidan.com/demos/css-shapes-layouts/demo-1/css/mask.png) top left;
-}
-.content h1 {
-    font-family: 'deconeuelight', sans-serif;
-    font-size: 85px;
-    line-height: 1;
-    float: left;
-    width: 308px;
-    height: 127vh;
-    margin-top: 0;
-    padding-top: 20px;
-    -webkit-shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-    shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-}
-.content span {
-    font-size:45px;
+.banner img {
+      margin-top: -40px;
+      margin-bottom: 24px;   
 }
 
 /* TOOLKIT */
@@ -77,9 +58,9 @@
     min-height: 198px;
     position: relative;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     .toolkit ul.tool-list li .panel {
-        min-height: auto;
+        min-height: 110px;
     }
 }
 .toolkit ul.tool-list li .panel h5 {
@@ -105,6 +86,11 @@
 /* MYMODAL_CV */
 #myModal_CV {
     height: auto;
+}
+@media screen and (max-width: 640px) {
+    #myModal_CV {
+        padding: 0;
+    }
 }
 #modalTitle span {
     font-size: 30px;
