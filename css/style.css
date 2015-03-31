@@ -2,11 +2,33 @@
 h1, h2, h3, h4, h5 {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+h4 {
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+h4 i {
+    margin-right: 6px;
+    font-size: 18px !important;
+}
 
 /* MENU */
-[data-magellan-expedition].fixed {
+.nav-bar {
+    margin-top: 18px;
+}
+/*[data-magellan-expedition].fixed {
     border: 1px solid #DDDDDD;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}*/
+
+/* ABOUT */
+.about {
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+.about h4 {
+    position: absolute;
+    top: 14px;
 }
 
 /* Profile Picture */
@@ -30,10 +52,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* BANNER */
-.banner img {
+/*.banner img {
       margin-top: -40px;
       margin-bottom: 24px;
-}
+}*/
 
 /* TOOLKIT */
 .toolkit h4 {
@@ -41,11 +63,8 @@ h1, h2, h3, h4, h5 {
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
     position: absolute;
-    top: 17px;
-    left: 23px;
-}
-.toolkit h4 i {
-    margin-right: 6px;
+    top: -7px;
+    left: 15px;
 }
 .toolkit ul.tool-list {
     margin-top: 45px;
@@ -55,8 +74,11 @@ h1, h2, h3, h4, h5 {
 }
 .toolkit ul.tool-list li .panel {
     background-color: #FFFFFF;
-    min-height: 198px;
+    min-height: 167px;
     position: relative;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 @media screen and (max-width: 1024px) {
     .toolkit ul.tool-list li .panel {
@@ -84,6 +106,11 @@ h1, h2, h3, h4, h5 {
 }
 
 /* PORTFOLIO */
+.portfolio h4 {
+    position: absolute;
+    top: -44px;
+    left: 15px;
+}
 .thumbnail {
     width: 228px;
     height: 180px;
@@ -95,7 +122,6 @@ h1, h2, h3, h4, h5 {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
 }
-
 
 /* MYMODAL_CV */
 #myModal_CV {
