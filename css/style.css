@@ -115,6 +115,9 @@ h4 i {
     width: 228px;
     height: 180px;
 }
+.portfolio a {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 .portfolio a:hover .thumbnail {
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
