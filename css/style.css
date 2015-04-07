@@ -16,10 +16,6 @@ h4 i {
 .nav-bar {
     margin-top: 18px;
 }
-/*[data-magellan-expedition].fixed {
-    border: 1px solid #DDDDDD;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}*/
 
 /* ABOUT */
 .about {
@@ -50,12 +46,6 @@ h4 i {
         margin-top: 36px;
     }
 }
-
-/* BANNER */
-/*.banner img {
-      margin-top: -40px;
-      margin-bottom: 24px;
-}*/
 
 /* TOOLKIT */
 .toolkit h4 {
@@ -114,13 +104,13 @@ h4 i {
 .thumbnail {
     width: 228px;
     height: 180px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .portfolio a {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 .portfolio a:hover .thumbnail {
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     -ms-transform: rotate(4deg);
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
