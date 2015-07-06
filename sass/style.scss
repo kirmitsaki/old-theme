@@ -1,0 +1,247 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@import "rotating-words";
+@import "timeline";
+@import "folio";
+
+
+/*------------------------------------------------------
+    GENERAL
+--------------------------------------------------------*/
+
+.brand-logo {
+    font-family: 'Bad Script', cursive;
+    span {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+}
+.fa.fa-external-link {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+    height: 0;
+}
+.section:not(.banner) {
+    padding: 4rem 0;
+}
+.row {
+    margin: 0;
+}
+p {
+    line-height: 1.5rem;
+}
+h5, h6 {
+    span {
+        font-size: 12px;
+    }
+}
+h5.header {
+    line-height: 1.5;
+    font-family: 'Bad Script', cursive;
+    color: #333;
+}
+
+/*------------------------------------------------------
+    NAV
+--------------------------------------------------------*/
+nav.about-nav {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    @media only screen and (min-width : 993px) {
+        .nav-wrapper {
+            border-bottom: 1px solid rgba(228, 228, 228, 0.48);
+        }
+    }
+    a {
+        font-family: 'Amatic SC', cursive;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.side-nav {
+    background-color: white;
+    text-align: left;
+    border: 0;
+}
+
+
+// nav {
+//     background: #1b434c;
+//     padding: 0 20px;
+//     ul.right {
+//         height: 100%;
+//     }
+//     a {
+//         font-weight: 700;
+//     }
+// }
+// .side-nav {
+//     background-color: rgba(27, 67, 76, 0.75);
+//     border-right: 2px solid rgba(0,0,0,0.2);
+//     li:hover, li.active {
+//         background-color: rgba(0,0,0,0.2);
+//     }
+//     a {
+
+//     }
+// }
+#sidenav-overlay {
+    z-index: 0;
+}
+
+/*------------------------------------------------------
+    PARALLAX
+--------------------------------------------------------*/
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
+.not-fullscreen {
+    height:50%;
+}
+
+/*------------------------------------------------------
+    SCROLLBAR Styling
+--------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/*------------------------------------------------------
+    WILL O WISP
+--------------------------------------------------------*/
+// body.about {
+//     font: 13px/19px "Open Sans", Arial, sans-serif;
+//     font-weight: 300;
+//     color: #777777;
+//     background-color: #4c4c4c;
+
+//     background: url(../img/will-o-wisp.jpg) !important;
+//     background-size: cover !important;
+//     background-position: center !important;
+//     background-repeat: no-repeat !important;
+//     background-attachment: fixed !important;
+
+//     overflow: hidden;
+// }
+// .sidebar-menu {
+//     z-index: 9;
+//     position: absolute;
+//     left: 0px;
+//     top: 0px;
+// }
+
+// .logo-wrapper {
+//     width: 322px;
+//     height: 496px;
+//     text-align: right;
+//     padding: 229px 30px 12px;
+//     background: url(../img/lantern2.png) !important;
+//     background-size: contain !important;
+//     background-position: center !important;
+//     background-repeat: no-repeat !important;
+// }
+
+/*------------------------------------------------------
+    BRIGHTNESS
+--------------------------------------------------------*/
+// #light {
+//     width: 140px;
+//     -webkit-filter: brightness(100%);
+//     -webkit-transition: all 1s ease;
+//      -moz-transition: all 1s ease;
+//        -o-transition: all 1s ease;
+//       -ms-transition: all 1s ease;
+//           transition: all 1s ease;
+// }
+
+// #light.brighter {
+//     -webkit-filter: brightness(150%);
+//     -moz-filter: brightness(150%);
+//     -o-filter: brightness(150%);
+//     -ms-filter: brightness(150%);
+//     filter: brightness(150%);
+// }
+
+// @media only screen and (max-width : 600px) {
+//     .sidebar-menu {
+//         top: -132px;
+//     }
+// }
+
+
+
+/*------------------------------------------------------
+    FOOTER
+--------------------------------------------------------*/
+footer.page-footer {
+    margin: 0;
+    background-color: #1b434c !important;
+    footer.page-footer .footer-copyright {
+        background-color: rgba(51, 51, 51, 0.2);
+    }
+    a, span {
+        font-family: 'Amatic SC', cursive;
+        font-size: 20px;
+    }
+    h5 {
+        font-family: 'Bad Script', cursive;
+    }
+    .fa {
+        margin-right: 7px;
+    }
+}
