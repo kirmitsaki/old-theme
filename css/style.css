@@ -601,10 +601,9 @@ html, body {
 .content-a {
   display: table; }
 
-.content-b {
+.content-b, .content-c {
   display: table-cell;
   position: relative;
-  vertical-align: middle;
   text-align: center;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 15%);
   /* FF3.6+ */
@@ -620,6 +619,12 @@ html, body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */ }
+
+.content-b {
+  vertical-align: bottom; }
+
+.content-c {
+  vertical-align: middle; }
 
 .not-fullscreen {
   height: 50%; }
