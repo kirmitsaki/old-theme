@@ -153,8 +153,9 @@ html, body {
 footer.page-footer {
     margin: 0;
     background-color: #1b434c !important;
-    footer.page-footer .footer-copyright {
+    .footer-copyright {
         background-color: rgba(51, 51, 51, 0.2);
+        height: auto;
     }
     a, span {
         font-family: 'Amatic SC', cursive;
