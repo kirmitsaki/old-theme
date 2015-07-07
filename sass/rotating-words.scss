@@ -34,18 +34,25 @@ h1.circle-text {
 }
 h2.title {
     font-family: 'Amatic SC', cursive;
+    font-weight: 700;
     color: #FFFFFF;
     text-shadow: 1px 1px 1px #202020;
 }
-h5.title {
+h4.title {
     font-family: 'Amatic SC', cursive;
     font-size: 32px;
     color: #FFFFFF;
     text-shadow: 1px 1px 1px #202020;
-    position: absolute;
-    bottom: 15%;
-    left: 43%;
 }
+// h5.title {
+//     font-family: 'Amatic SC', cursive;
+//     font-size: 32px;
+//     color: #FFFFFF;
+//     text-shadow: 1px 1px 1px #202020;
+//     position: absolute;
+//     bottom: 15%;
+//     left: 43%;
+// }
 .char1 {
     transform: rotate(-48deg);
 }
@@ -129,34 +136,34 @@ h5.title {
     -ms-animation: rotateWord 18s linear infinite 0s;
     animation: rotateWord 18s linear infinite 0s;
 }
-.rw-words-1 span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-    -ms-animation-delay: 3s; 
-    animation-delay: 3s; 
+.rw-words-1 span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
     color: #6b889d;
 }
-.rw-words-1 span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-    -ms-animation-delay: 6s; 
-    animation-delay: 6s; 
-    color: #6b739d; 
+.rw-words-1 span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    color: #6b739d;
 }
-.rw-words-1 span:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-    -ms-animation-delay: 9s; 
-    animation-delay: 9s; 
+.rw-words-1 span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
     color: #7a6b9d;
 }
-.rw-words-1 span:nth-child(5) { 
-    -webkit-animation-delay: 12s; 
-    -ms-animation-delay: 12s; 
-    animation-delay: 12s; 
+.rw-words-1 span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
     color: #8d6b9d;
 }
-.rw-words-1 span:nth-child(6) { 
-    -webkit-animation-delay: 15s; 
-    -ms-animation-delay: 15s; 
-    animation-delay: 15s; 
+.rw-words-1 span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
     color: #9b6b9d;
 }
 @-webkit-keyframes rotateWord {

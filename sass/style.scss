@@ -76,28 +76,6 @@ nav.about-nav {
     text-align: left;
     border: 0;
 }
-
-
-// nav {
-//     background: #1b434c;
-//     padding: 0 20px;
-//     ul.right {
-//         height: 100%;
-//     }
-//     a {
-//         font-weight: 700;
-//     }
-// }
-// .side-nav {
-//     background-color: rgba(27, 67, 76, 0.75);
-//     border-right: 2px solid rgba(0,0,0,0.2);
-//     li:hover, li.active {
-//         background-color: rgba(0,0,0,0.2);
-//     }
-//     a {
-
-//     }
-// }
 #sidenav-overlay {
     z-index: 0;
 }
@@ -160,70 +138,6 @@ html, body {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
-
-/*------------------------------------------------------
-    WILL O WISP
---------------------------------------------------------*/
-// body.about {
-//     font: 13px/19px "Open Sans", Arial, sans-serif;
-//     font-weight: 300;
-//     color: #777777;
-//     background-color: #4c4c4c;
-
-//     background: url(../img/will-o-wisp.jpg) !important;
-//     background-size: cover !important;
-//     background-position: center !important;
-//     background-repeat: no-repeat !important;
-//     background-attachment: fixed !important;
-
-//     overflow: hidden;
-// }
-// .sidebar-menu {
-//     z-index: 9;
-//     position: absolute;
-//     left: 0px;
-//     top: 0px;
-// }
-
-// .logo-wrapper {
-//     width: 322px;
-//     height: 496px;
-//     text-align: right;
-//     padding: 229px 30px 12px;
-//     background: url(../img/lantern2.png) !important;
-//     background-size: contain !important;
-//     background-position: center !important;
-//     background-repeat: no-repeat !important;
-// }
-
-/*------------------------------------------------------
-    BRIGHTNESS
---------------------------------------------------------*/
-// #light {
-//     width: 140px;
-//     -webkit-filter: brightness(100%);
-//     -webkit-transition: all 1s ease;
-//      -moz-transition: all 1s ease;
-//        -o-transition: all 1s ease;
-//       -ms-transition: all 1s ease;
-//           transition: all 1s ease;
-// }
-
-// #light.brighter {
-//     -webkit-filter: brightness(150%);
-//     -moz-filter: brightness(150%);
-//     -o-filter: brightness(150%);
-//     -ms-filter: brightness(150%);
-//     filter: brightness(150%);
-// }
-
-// @media only screen and (max-width : 600px) {
-//     .sidebar-menu {
-//         top: -132px;
-//     }
-// }
-
-
 
 /*------------------------------------------------------
     FOOTER
