@@ -551,16 +551,14 @@ nav.about-nav {
   background-color: transparent;
   position: absolute;
   z-index: 10; }
-  @media only screen and (min-width: 993px) {
-    nav.about-nav .nav-wrapper {
-      border-bottom: 1px solid rgba(228, 228, 228, 0.48); } }
   nav.about-nav a {
     font-family: 'Amatic SC', cursive;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
-    color: #333; }
+    color: #333;
+    text-decoration: underline; }
     nav.about-nav a:hover {
-      text-decoration: underline; }
+      text-decoration: none; }
 
 .side-nav {
   background-color: white;
@@ -605,21 +603,7 @@ html, body {
 .content-b, .content-c {
   display: table-cell;
   position: relative;
-  text-align: center;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 15%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, transparent));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 15%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 15%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 15%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, transparent 15%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
-  /* IE6-9 */ }
+  text-align: center; }
 
 .content-b {
   vertical-align: bottom; }
