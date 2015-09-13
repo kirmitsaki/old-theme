@@ -1,104 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="author" content="Chrysa Kirmitsaki">
-    <meta name="keywords" content="web,design,ux,chrysa,kirmitsaki,html,css,html5">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta property="og:title" content="ChrysaKi | Portfolio">
-    <meta property="og:image" content="img/portfolio.png">
-    <meta property="og:description" content="What I love to do is designing user-centered web-stories and experimenting with the latest front-end techniques and CSS tricks in order to give them appealing form and substance.">
-    <title>ChrysaKi | Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CK - UX Designer</title>
+
     <link rel="icon"
           type="image/png"
           href="img/favicon.png">
-    <!-- CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-    <!-- Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-61148926-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body id="top" data-spy="scroll" class="about">
-    <nav class="about-nav" role="navigation" style="box-shadow: none;">
-        <div class="nav-wrapper">
-            <ul class="right hide-on-med-and-down">
-                <li><a class="white-text active">Home</a></li>
-                <!-- <li><a href="#pixel-making" class="smoothScroll white-text">Pixel Making</a></li> -->
-                <li><a href="timeline.html" class="smoothScroll white-text">About</a></li>
-                <li><a href="folio.html" class="smoothScroll white-text">Folio</a></li>
-                <li><a data-pin-do="embedBoard" href="https://uk.pinterest.com/chrysakir/my-hobby-spot/" class="smoothScroll white-text">My Hobby Spot<i class="fa fa-external-link"></i></a></li>
-            </ul>
-            <ul id="nav-mobile" class="side-nav">
-                <li><a class="active">Home</a></li>
-                <!-- <li><a href="#pixel-making" class="smoothScroll">Pixel Making</a></li> -->
-                <li><a href="timeline.html" class="smoothScroll">About</a></li>
-                <li><a href="folio.html" class="smoothScroll">Folio</a></li>
-                <li><a data-pin-do="embedBoard" href="https://uk.pinterest.com/chrysakir/my-hobby-spot/" class="smoothScroll">My Hobby Spot<i class="fa fa-external-link"></i></a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="white-text mdi-navigation-menu"></i></a>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CK | UX Designer</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tools">Tools</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="https://drive.google.com/file/d/0B2Z38ju5DLPIR2dwVFhzN0Vndk0/view?usp=sharing">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
 
+    <!-- Header -->
+    <header style="">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in" style="text-shadow: 3px 1px 5px rgba(0, 0, 0, 1)">Welcome To My Web Corner!</div>
+                <div class="intro-heading" style="text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.7);">It's Nice To Meet You</div>
+                <a href="#contact" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="hide-on-small-only fullscreen background" style="background-image:url('img/will-o-wisp.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <div class="content-a">
-            <div class="content-b">
-                <h1 class="circle-text">Chrysa Kirmitsaki</h1>
-                <h4 class="title">Designer / Developer</h4>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">
+                        What I love to do is designing (web)stories that have something to say. 
+                    </h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <img src="img/reviewing.png" style="position: absolute;left: 0;width: 100%;text-align: center;">
+                    </span>
+                    <h4 class="service-heading">Step 1:<br>Reviewing</h4>
+                    <p class="text-muted">
+                        Find how to convert passive website visitors into active users that engage with the (web)product.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <img src="img/design.png" style="position: absolute;left: 0;width: 100%;text-align: center;">
+                    </span>
+                    <h4 class="service-heading">Step 2:<br>Designing</h4>
+                    <p class="text-muted">
+                        Take the knowledge gained from the research stage and use to it to  create user-centered designs. 
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <img src="img/ux.png" style="position: absolute;left: 0;width: 100%;text-align: center;">
+                    </span>
+                    <h4 class="service-heading">Step 3:<br>Testing</h4>
+                    <p class="text-muted">
+                        Test with the produced prototype if the new design is more accepted by the users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- <h2 class="rw-sentence">
-                    <span>Real poetry is like creating beautiful butterflies with a silent touch of</span>
-                    <div class="rw-words rw-words-1">
-                        <span>spice</span>
-                        <span>colors</span>
-                        <span>happiness</span>
-                        <span>wonder</span>
-                        <span>sugar</span>
-                        <span>happiness</span>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/gallery.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Gallery</h4>
+                        <p class="text-muted">Website Design</p>
                     </div>
-                </h2> -->
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/raven.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>The Raven</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/middleearth.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Middle Earth</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ve.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Voyages Extraordinaire</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/ongoing.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Ongoing...</h4>
+                        <p class="text-muted">Stay tuned! I'm adding more projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">For me it was always about Design.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/6.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2005-2007</h4>
+                                    <h4 class="subheading">Drawing board, inks and pencils</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">While on High School, I enrolled in an art academy in order to learn architectural and still life pencil drawing.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/5.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2013</h4>
+                                    <h4 class="subheading">University years</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">My BS degree in Informatics was focused on design, this time though with an emphasis on design and evaluation of user-centered software, human-computer interaction, interaction design.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/7.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>January 2014</h4>
+                                    <h4 class="subheading">Moving to UK</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Since moving to the UK, my design horizons have been opened up and my own personal challenge is to find ways to combine function and aesthetics in experiences that are shared online.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/8.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>January 2014 - September 2015</h4>
+                                    <h4 class="subheading">From Jr Front-End developer <i class="fa fa-long-arrow-right"></i> UX Engineer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">It was my choice to start my career as a frontend developer, driven by a belief that magic in digital products comes from a recipe of beautiful design and elegant code. Besides you need to learn the limitations of the tools that are used to give substance to the design. </p>
+
+                                    <p class="text-muted">After sometime though, I got involved in the UX process defining the product too.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <h4><br>Next Step<br>...</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Toolkit</h2>
+                    <h3 class="section-subheading text-muted">Some of my favorite tools and technologies.</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/logos/balsamiq.png" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/logos/bootstrap.png" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/logos/html5_css3_javascript.png" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="img/logos/sass.png" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Scratch Map</h2>
+                    <h3 class="section-subheading text-muted">Little by little, one travels far.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">2015 ChrysaKirmitsaki.</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.linkedin.com/in/chrysakirmitsaki"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://github.com/chrysaki"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.behance.net/chrysakir"><i class="fa fa-behance"></i></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li>Made with <a href="http://startbootstrap.com/template-overviews/agency/">Bootstrap theme Agency</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Gallery</h2>
+                            <p class="item-intro text-muted">Parallax backrounds effect/ FilmRoll Carousel / Materialize / Design</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/gallery-preview.png" alt="">
+                            <p><a href="http://chrysaki.github.io/The_Gallery/">Gallery</a> is the result of a design exercise focused on creating with the responsive framework materialize a demo site about art. The site has two functional tabs <br><b>(1)Current Exhibitions:</b>There are 3 sections each one starts with a slider with the works of art that are included in the exhibition. <b>(2)Artists:</b> A small bio section for each one of the relevant Artists.</p>
+                            <h4>Details</h4>
+                            <p>
+                                For this site I used the Materialize: responsive framework taht is based on Google's Material Design.
+                                I also used the FilmRoll: Jquery Carosuel for the exhibition sliders. Added some css to have the images that are not active grayscaled.
+                                The images that I used were found online.
+                            </p>
+                            <p>You can preview Gallery <a href="http://chrysaki.github.io/The_Gallery/">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>The Raven</h2>
+                            <p class="item-intro text-muted">Parallax backrounds effect/ Design/ Poe’s poem.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/raven-preview.png" alt="">
+                            <p>This is the result of a design exercise focused on creating a site that “narrates” Edgar Alan Poe’s “The Raven”.
 
-    <div class="hide-on-med-and-up fullscreen background" style="background-image:url('img/will-o-wisp.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <div class="content-a">
-            <div class="content-c">
-                <h2 class="title">Chrysa Kirmitsaki</h2>
-                <h4 class="title">Designer / Developer</h4>
+                            <h4>Details</h4>
+                            <p>By using scrolling parallax background effects the background-image changes as Poe’s poem “The Raven” unfolds. Reaching the to bottom, the background-image fades into one that shows the raven fly in the sky instead of sitting on the fence.</p>
+                            <p>You can preview Raven <a href="http://chrysaki.github.io/The_Raven/">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Middle Earth</h2>
+                            <p class="item-intro text-muted">Changing backgrounds/ Tolkien’s Middle Earth/ Responsive Design.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/middleearth-preview.png" alt="">
+                            <p>As a big Tolkien fan I found inspiration in his work and started this design exercise of a wiki for the Cities and Kingdoms of Middle Earth.</p>
+                            <p>You can preview Middle Earth demo <a href="http://chrysaki.github.io/Middle_Earth/">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/jquery.lettering.js"></script> <!-- Lettering -->
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Voyages Extraordinaire</h2>
+                            <p class="item-intro text-muted">Pinterest effect with CSS/ Changing backgrounds/ Design/ Jules Verne Voyages extraordinaire.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/ve-preview.png" alt="">
+                            <p>Some time ago I found a tutorial for creating pinterest effect with only css. I was fascinated and intrigued to use it in a site that will have well-presented the original illustrations of a series of books of one of my favourite authors. Tried to spice it up a bit by using steampunk references (background images and gears in menu).</p>
+                            <p>You can this website <a href="http://chrysaki.github.io/Verne/">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        $(".circle-text").lettering();
-    </script>
-  </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
 </html>
-
-
-
-
