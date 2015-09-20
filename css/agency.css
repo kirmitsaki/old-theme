@@ -802,3 +802,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
