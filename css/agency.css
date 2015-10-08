@@ -734,8 +734,10 @@ ul.social-buttons li a:active {
     margin-bottom: 15px;
     font-size: 3em;
 }
-.portfolio-modal .modal-content p {
-    margin-bottom: 30px;
+.portfolio-modal .modal-content p, .portfolio-modal .modal-content ul, .portfolio-modal .modal-content ol {
+    /*margin-bottom: 30px;*/
+    margin-bottom: 16px;
+
 }
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
@@ -802,7 +804,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
-.label {
+.label.ongoing {
     position: absolute;
     top: 0;
     right: 0;
