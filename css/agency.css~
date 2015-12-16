@@ -596,7 +596,7 @@ aside.technologies img {
 }*/
 section#map {
     background-color: #222;
-    background-image: url(../img/map-imagev2.png);
+    background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
