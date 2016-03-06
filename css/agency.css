@@ -810,3 +810,46 @@ body {
     right: 0;
     font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.features-box-left, .features-box-right {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.features-box-right {
+    padding-right: 75px;
+    text-align: right;
+}
+.features-box-left {
+    padding-left: 75px;
+    text-align: left;
+}
+.features-icon-left, .features-icon-right {
+    font-size: 50px;
+    line-height: 50px;
+    display: inline-block;
+    position: absolute;
+}
+.features-icon-right {
+    padding-left: 20px;
+    right: 0;
+}
+.features-icon-left {
+    padding-right: 20px;
+    left: 0;
+}
+
