@@ -6,7 +6,9 @@
 
 body {
     overflow-x: hidden;
-    font-family: "PT Sans", sans-serif;
+    /*font-family: "PT Sans", sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .text-muted {
@@ -51,9 +53,9 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: "IM Fell Double Pica", serif;
-    font-weight: 700;
+    /*font-weight: 700;*/
 }
 
 .img-centered {
@@ -448,7 +450,8 @@ section h3.section-subheading {
     margin: 0;
     /*font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-size: 16px;
-    font-family: "PT Sans", sans-serif;
+    /*font-family: "PT Sans", sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
     /*font-style: italic;*/
 }
 #portfolio * {
@@ -833,8 +836,9 @@ img::-moz-selection {
     line-height: 1.6;
     margin: 15px auto;
     max-width: 800px;
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
+    /*font-family: "PT Sans", sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 .cd-modal p.item-intro {
     font-family: "IM Fell Double Pica", serif;
@@ -907,6 +911,24 @@ img::-moz-selection {
   }
 }
 
+.dark-container {
+    background: #2e2e2e;
+    color: white;
+    padding: 15px 0;
+}
+
+.cd-modal .modal-body table tr:nth-child(even) {
+    background-color: #ececec;
+}
+.cd-modal .modal-body table td {
+    vertical-align: middle;
+}
+.cd-modal .modal-body table td.red {
+    color: #c30000;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+}
 /* -------------------------------- 
           Transition Layer 
 -------------------------------- */
