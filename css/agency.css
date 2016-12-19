@@ -1092,3 +1092,14 @@ img::-moz-selection {
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }   
+
+.mistletoe {
+    position: relative;
+}
+
+.mistletoe-svg {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    max-width: 20px;
+}
