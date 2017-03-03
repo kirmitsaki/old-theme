@@ -183,7 +183,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-brand {
     font-family: "IM Fell Double Pica", serif;
-    color: #fed136;
+    /*color: #fed136;*/
+    color: #dedede;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -219,7 +220,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    /*color: #fff;*/
+    color: #dedede;
     background-color: #fed136;
 }
 .navbar-default .navbar-nav>.active>a:hover,
@@ -258,19 +260,37 @@ fieldset[disabled] .btn-xl.active {
 -------------------------------- */
 header {
     text-align: center;
-    color: #fff;
+    color: #da97a4;
     background-attachment: scroll;
-    background-image: url(../img/header-bg-v3.jpg);
+    background-image: url(../img/header.jpeg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    background-attachment: fixed;
+    min-height: 700px;
 }
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    /*padding-top: 100px;
+    padding-bottom: 50px;*/
+
+
+    color: #ffbcc9;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
@@ -1059,13 +1079,12 @@ img::-moz-selection {
 
 /*SNOW*/
 /*body { background-color:#333; }*/
-#snow{
+/*#snow{
     background: none;
     font-family: Androgyne;
     background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
     height: 100%;
     left: 0;
-    /*position: absolute;*/
     position: fixed;
     top: 0;
     width: 100%;
@@ -1095,14 +1114,4 @@ img::-moz-selection {
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }   
-
-.mistletoe {
-    position: relative;
-}
-
-.mistletoe-svg {
-    position: absolute;
-    top: 20%;
-    right: 0;
-    max-width: 20px;
-}
+*/
