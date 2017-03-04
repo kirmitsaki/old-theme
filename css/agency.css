@@ -1085,7 +1085,7 @@ img::-moz-selection {
 }
 
 
-/*SNOW*/
+/*SNOW FLAKES*/
 /*body { background-color:#333; }*/
 /*#snow{
     background: none;
@@ -1124,6 +1124,103 @@ img::-moz-selection {
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }*/   
 
+
+/*SAKURA PETALS*/
+.fallingLeaves {
+    text-align: center;
+}
+.fallingLeaves span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -280px 40px 54px  -34px;   
+    -webkit-animation: fallingLeaves 10s infinite  linear;
+    -moz-animation: fallingLeaves 10s infinite  linear;
+}
+.fallingLeaves span.s1 {
+    background:url("../img/petal1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fallingLeaves span.s2 {
+    background:url("../img/petal2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fallingLeaves span.s3 {
+    background:url("../img/petal3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fallingLeaves span.s4 {
+    background:url("../img/petal4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fallingLeaves span:nth-child(5n+5) {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+}
+.fallingLeaves span:nth-child(3n+2) {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+.fallingLeaves span:nth-child(2n+5) {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+}
+
+.fallingLeaves span:nth-child(3n+10) {
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+}
+.fallingLeaves span:nth-child(7n+2) {
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+}
+.fallingLeaves span:nth-child(4n+5) {
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+}
+.fallingLeaves span:nth-child(3n+7) {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+}
+@-webkit-keyframes fallingLeaves {
+  0% {
+    opacity: 1;
+
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+@-moz-keyframes fallingLeaves {
+  0% {
+    opacity: 1;
+    
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+   
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+    
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
 
 
 section.quote {
