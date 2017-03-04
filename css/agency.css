@@ -6,7 +6,6 @@
 
 body {
     overflow-x: hidden;
-    /*font-family: "PT Sans", sans-serif;*/
     font-family: 'Bad Script', cursive;
 
 }
@@ -471,7 +470,6 @@ section h3.section-subheading {
     margin: 0;
     /*font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-size: 16px;
-    /*font-family: "PT Sans", sans-serif;*/
     font-family: 'Bad Script', cursive;
     /*font-style: italic;*/
 }
@@ -660,9 +658,15 @@ section h3.section-subheading {
 section#map {
     background-color: #222;
     background-image: url(../img/map-imagev3.png);
-    background-position: bottom;
     background-repeat: no-repeat;
+    background-position: center 20%;
+
+}
+@media only screen and (min-width: 1100px) {
+  section#map {
     background-attachment: fixed;
+    background-position: bottom;
+  }
 }
 section#map .section-heading {
     color: #fff;
@@ -864,7 +868,6 @@ img::-moz-selection {
     line-height: 1.6;
     margin: 15px auto;
     max-width: 800px;
-    /*font-family: "PT Sans", sans-serif;*/
     font-family: 'Bad Script', cursive;
     font-size: 16px;
 }
