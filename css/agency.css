@@ -15,7 +15,6 @@ body {
 }
 
 .text-primary {
-    /*color: #fed136;*/
     color: #E91E63;
 }
 
@@ -37,14 +36,14 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #E91E63;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #E91E63;
 }
 
 h1,
@@ -53,9 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-    /*text-transform: uppercase;*/
     font-family: 'Bad Script', cursive;
-    /*font-weight: 700;*/
 }
 
 .img-centered {
@@ -77,11 +74,11 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #fed136;
+    border-color: #222;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #222;
 }
 
 .btn-primary:hover,
@@ -89,9 +86,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #222;
     color: #fff;
-    background-color: #fec503;
+    background-color: #222;
 }
 
 .btn-primary:active,
@@ -100,7 +97,7 @@ h6 {
     background-image: none;
 }
 
-.btn-primary.disabled,
+/*.btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,
 .btn-primary.disabled:hover,
@@ -117,7 +114,7 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
     border-color: #fed136;
     background-color: #fed136;
-}
+}*/
 
 .btn-primary .badge {
     color: #fed136;
@@ -151,7 +148,7 @@ fieldset[disabled] .btn-primary.active {
     background-image: none;
 }
 
-.btn-xl.disabled,
+/*.btn-xl.disabled,
 .btn-xl[disabled],
 fieldset[disabled] .btn-xl,
 .btn-xl.disabled:hover,
@@ -168,12 +165,12 @@ fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl.active {
     border-color: #fed136;
     background-color: #fed136;
-}
+}*/
 
-.btn-xl .badge {
+/*.btn-xl .badge {
     color: #fed136;
     background-color: #fff;
-}
+}*/
 /* -------------------------------- 
             navbar
 -------------------------------- */
@@ -183,28 +180,29 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-default .navbar-brand {
     font-family: 'Bad Script', cursive;
-    /*color: #fed136;*/
     color: #dedede;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    /*color: #E91E63;*/
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 700;
 }
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
 }
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    background-color: transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #000;
 }
 .navbar-default .nav li a {
     text-transform: uppercase;
@@ -216,18 +214,22 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 700;
 }
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    /*color: #fff;*/
-    color: #dedede;
-    background-color: #fed136;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 700;
+    background-color: transparent;
 }
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 700;
+    background-color: transparent;
 }
 @media(min-width:768px) {
     .navbar-default {
@@ -277,10 +279,6 @@ header {
     min-height: 700px;
 }
 header .intro-text {
-    /*padding-top: 100px;
-    padding-bottom: 50px;*/
-
-
     color: #ffbcc9;
     text-align: center;
     width: 50%;
@@ -423,7 +421,7 @@ section h3.section-subheading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(254,209,54,.9);
+    background: rgba(255, 188, 201, 0.35);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -468,10 +466,8 @@ section h3.section-subheading {
 }
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    /*font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-size: 16px;
     font-family: 'Bad Script', cursive;
-    /*font-style: italic;*/
 }
 #portfolio * {
     z-index: 2;
@@ -678,7 +674,7 @@ section#map .section-heading {
 footer {
     padding: 25px 0;
     text-align: center;
-    /*cause f the snow div*/
+    /*cause of the snow div*/
     position: relative;
     z-index: 2;
     background-color: #222;
@@ -721,7 +717,8 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #fff;
+    text-shadow: 1px 1px 1px #222;
 }
 
 .btn:focus,
