@@ -37,7 +37,10 @@
     background-size: contain;
 }
 
-.fallingPetals span:nth-child(5n+5) {
+
+
+
+/*.fallingPetals span:nth-child(5n+5) {
     -webkit-animation-delay: 1.3s;
     -moz-animation-delay: 1.3s;
 }
@@ -65,8 +68,80 @@
 .fallingPetals span:nth-child(3n+7) {
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
+}*/
+
+
+
+
+
+
+
+
+.fallingPetals span:nth-of-type(n)   { 
+    -webkit-animation-delay: 1.9s;
+    -moz-animation-delay:  1.9s;
 }
-@-webkit-keyframes fallingPetals {
+.fallingPetals span:nth-of-type(2n)  { 
+    -webkit-animation-delay: 3.9s;
+    -moz-animation-delay:  3.9s;
+}
+.fallingPetals span:nth-of-type(3n)  { 
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay:  2.3s;
+}
+.fallingPetals span:nth-of-type(4n)  { 
+    -webkit-animation-delay: 4.4s;
+    -moz-animation-delay:  4.4s;
+}
+.fallingPetals span:nth-of-type(5n)  { 
+    -webkit-animation-delay: 5s;  
+    -moz-animation-delay:  5s;  
+}
+.fallingPetals span:nth-of-type(6n)  { 
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay:  3.5s;
+}
+.fallingPetals span:nth-of-type(7n)  { 
+    -webkit-animation-delay: 2.8s;
+    -moz-animation-delay:  2.8s;
+}
+.fallingPetals span:nth-of-type(8n)  { 
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay:  1.5s;
+}
+.fallingPetals span:nth-of-type(9n)  { 
+    -webkit-animation-delay: 3.3s;
+    -moz-animation-delay:  3.3s;
+}
+.fallingPetals span:nth-of-type(10n) { 
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay:  2.5s;
+}
+.fallingPetals span:nth-of-type(11n) { 
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:  1.2s;
+}
+.fallingPetals span:nth-of-type(12n) { 
+    -webkit-animation-delay: 4.1s;
+    -moz-animation-delay:  4.1s;
+}
+.fallingPetals span:nth-of-type(13n) { 
+    -webkit-animation-delay: 1s;  
+    -moz-animation-delay:  1s;  
+}
+.fallingPetals span:nth-of-type(14n) { 
+    -webkit-animation-delay: 4.7s;
+    -moz-animation-delay:  4.7s;
+}
+.fallingPetals span:nth-of-type(15n) { 
+    -webkit-animation-delay: 3s;  
+    -moz-animation-delay:  3s;  
+}
+
+
+
+
+/*@-webkit-keyframes fallingPetals {
   0% {
     opacity: 1;
 
@@ -99,4 +174,52 @@
     
     -webkit-transform: translate(150px, 800px) rotateZ(360deg);
   }
+}*/
+
+
+
+@-webkit-keyframes fallingPetals {
+    
+    0% {
+        -webkit-transform:
+            translate3d(300,0,0)
+            rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-350px,700px,0)
+            rotate(90deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fallingPetals {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(-20deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-230px,640px,0)
+            rotate(-70deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fallingPetals {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(90deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-400px,680px,0)
+            rotate(0deg);
+        opacity: 0;
+    }
 }
