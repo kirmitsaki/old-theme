@@ -1,5 +1,5 @@
 /*SAKURA PETALS*/
-.sakura-container {
+/*.sakura-container {
     position: fixed;
     top: 0;
     right: 0;
@@ -35,45 +35,6 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-
-
-
-/*.fallingPetals span:nth-child(5n+5) {
-    -webkit-animation-delay: 1.3s;
-    -moz-animation-delay: 1.3s;
-}
-.fallingPetals span:nth-child(3n+2) {
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
-}
-.fallingPetals span:nth-child(2n+5) {
-    -webkit-animation-delay: 1.7s;
-    -moz-animation-delay: 1.7s;
-}
-
-.fallingPetals span:nth-child(3n+10) {
-    -webkit-animation-delay: 2.7s;
-    -moz-animation-delay: 2.7s;
-}
-.fallingPetals span:nth-child(7n+2) {
-    -webkit-animation-delay: 3.5s;
-    -moz-animation-delay: 3.5s;
-}
-.fallingPetals span:nth-child(4n+5) {
-    -webkit-animation-delay: 5.5s;
-    -moz-animation-delay: 5.5s;
-}
-.fallingPetals span:nth-child(3n+7) {
-    -webkit-animation-delay: 8s;
-    -moz-animation-delay: 8s;
-}*/
-
-
-
-
-
-
 
 
 .fallingPetals span:nth-of-type(n)   { 
@@ -137,46 +98,6 @@
     -moz-animation-delay:  3s;  
 }
 
-
-
-
-/*@-webkit-keyframes fallingPetals {
-  0% {
-    opacity: 1;
-
-    -webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    opacity: 1;
-
-    -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
-  }
-  100% {
-    opacity: 0;
-
-    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}
-@-moz-keyframes fallingPetals {
-  0% {
-    opacity: 1;
-    
-    -webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    opacity: 1;
-   
-    -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
-  }
-  100% {
-    opacity: 0;
-    
-    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}*/
-
-
-
 @-webkit-keyframes fallingPetals {
     
     0% {
@@ -222,3 +143,122 @@
         opacity: 0;
     }
 }
+*/
+
+
+
+
+
+/* This CSS rule is applied to all div elements in the sakuraContainer div.
+   It styles and animates each leafDiv.
+*/
+#sakuraContainer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+#sakuraContainer > div {
+   position: absolute;
+   width: 100%;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+
+
+/* This CSS rule is applied to all img elements directly inside div elements which are
+   directly inside the sakuraContainer div. In other words, it matches the 'img' elements
+   inside the leafDivs which are created in the createALeaf() function.
+*/
+
+#sakuraContainer > div > img {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    /* We use the following properties to adjust the clockwiseSpin or counterclockwiseSpinAndFlip
+       animations on each leaf.
+       The createALeaf function in the Leaves.js file determines whether a leaf has the 
+       clockwiseSpin or counterclockwiseSpinAndFlip animation.
+    */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-transform-origin: 50% -100%;
+}
+
+
+/* Hides a leaf towards the very end of the animation */
+
+@-webkit-keyframes fade {
+  /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Makes a leaf fall from -300 to 600 pixels in the y-axis */
+
+@-webkit-keyframes drop {
+  /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+  0% {
+    -webkit-transform: translate(0px, -50px);
+  }
+  /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+  100% {
+    -webkit-transform: translate(0px, 650px);
+  }
+}
+
+
+/* Rotates a leaf from -50 to 50 degrees in 2D space */
+
+@-webkit-keyframes clockwiseSpin {
+  /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: rotate(-50deg);
+  }
+  /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: rotate(50deg);
+  }
+}
+
+
+/* Flips a leaf and rotates it from 50 to -50 degrees in 2D space */
+
+@-webkit-keyframes counterclockwiseSpinAndFlip {
+  /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: scale(-1, 1) rotate(50deg);
+  }
+  /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: scale(-1, 1) rotate(-50deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
